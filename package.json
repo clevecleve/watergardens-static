@@ -1,0 +1,11 @@
+{
+  "name": "watergardens-static",
+  "version": "1.0.0",
+  "description": "Static snapshot of https://watergardens.qicre.com for Netlify deployment",
+  "private": true,
+  "scripts": {
+    "crawl": "CRAWL_ORIGIN=https://watergardens.qicre.com CRAWL_OUT_DIR=$(pwd)/dist node /Users/jase/Downloads/web/qicre-static/crawl-generic.js",
+    "postprocess": "CRAWL_ORIGIN=https://watergardens.qicre.com CRAWL_OUT_DIR=$(pwd)/dist node /Users/jase/Downloads/web/qicre-static/postprocess-generic.js",
+    "fix": "CRAWL_ORIGIN=https://watergardens.qicre.com CRAWL_OUT_DIR=$(pwd)/dist node /Users/jase/Downloads/web/qicre-static/fix2-generic.js"
+  }
+}
